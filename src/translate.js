@@ -60,7 +60,7 @@ function translate(data, options) {
       var extra = {
         method: 'post',
         headers,
-        baseURL: 'https://translate.google.com',
+        baseURL: 'https://translate.google.' + tld,
         url,
         params: query,
         proxy: options.proxy || false
