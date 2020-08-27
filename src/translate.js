@@ -1,4 +1,3 @@
-
 var axios = require('axios');
 
 var translateToken = require("./token");
@@ -34,7 +33,8 @@ function translate(data, options) {
       proxy: options.proxy || false,
     })
     .then(function (res) {
-      const url = `/translate_a/single?q=${util_1.arrayStringify(data)}`;
+      const text = util_1.arrayStringify(data);
+      const url = `/translate_a/single`;
       var query = {
         client: options.client || 'gtx',
         sl: options.from,
@@ -48,7 +48,7 @@ function translate(data, options) {
         tsel: 0,
         kc: 7,
         [res.name]: res.value,
-        // q: util_1.arrayStringify(data)
+        q: text
       };
 
       var headers = {
