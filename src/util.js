@@ -12,6 +12,7 @@ function parseMultiple(list) {
         var text = item[0];
         return text.trim();
     });
-    return translateMap.join('').split(JOIN_WITH);
+    var result = translateMap.join(' ').split(JOIN_WITH).map(item => item.trim());
+    return result;
 }
 exports.parseMultiple = parseMultiple;

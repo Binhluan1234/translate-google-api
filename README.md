@@ -18,11 +18,7 @@ npm install --save translate-google-api
 
 # Why this repo ？
 
-when I have the following sentence. ( from [How Are Function Components Different from Classes?](https://overreacted.io/how-are-function-components-different-from-classes/))
-
-```
-Maybe you’ve heard one of them is better for performance. Which one? Many of such benchmarks are flawed so I’d be careful drawing conclusions from them.
-```
+I have tried some libs for translate on React-Native app. But don't have any package support.
 I don't want to translate all the text first and I'd like to translate segment by segment. Especially in an article, the whole translation may not work well.
 
 In the existing library, if I want to translate multi-segment text, I have to request multiple times.(like [google-translate-api](https://github.com/matheuss/google-translate-api))
@@ -47,7 +43,7 @@ Multi-segment text
 ```javascript
 import translate from 'translate-google-api';
 
-const result = await translate([`I'm fine.`, `I'm ok.`], {
+const result = await translate(['Hi', 'How are you?', `I'm fine`], {
   tld: "cn",
   to: "vi",
 });
