@@ -1,10 +1,9 @@
-# google-translate-open-api
+# translate-google-api
 A free and unlimited API for Google Translate（support single text and Multi-segment text） 💵🚫
 # Feature
 
 - Multi-segment text support
 - Auto language detection
-- Spelling correction
 - Language correction
 - Fast and reliable – it uses the same servers that [translate.google.com](https://translate.google.com/) uses
 - Free and unlimited (translate.google.com uses a token to authorize the requests. If you are not Google, you do not have this token and will have to pay [$20 per 1 million characters of text](https://cloud.google.com/translate/v2/pricing))
@@ -19,6 +18,7 @@ npm install --save translate-google-api
 # Why this repo ？
 
 I have tried some libs for translate on React-Native app. But don't have any package support.
+
 I don't want to translate all the text first and I'd like to translate segment by segment. Especially in an article, the whole translation may not work well.
 
 In the existing library, if I want to translate multi-segment text, I have to request multiple times.(like [google-translate-api](https://github.com/matheuss/google-translate-api))
