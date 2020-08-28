@@ -7,7 +7,7 @@ var util_1 = require("./util");
 function translate(data, options) {
   var e;
   options.from = options.from || 'auto';
-
+  options.to = options.to || 'en';
   if (options.from) {
     if (!language_1.isSupport(options.from)) {
       e = new Error();

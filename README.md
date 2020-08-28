@@ -47,7 +47,7 @@ const result = await translate(['Hi', 'How are you?', `I'm fine`], {
   tld: "cn",
   to: "vi",
 });
-["Chào","Bạn khỏe không?","Tôi ổn."]
+//["Chào","Bạn khỏe không?","Tôi ổn."]
 
 ```
 
