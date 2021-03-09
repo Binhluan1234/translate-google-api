@@ -1,7 +1,7 @@
 {
-  "name": "translate-google-api",
+  "name": "@william5553/translate-google-api",
   "version": "1.0.5",
-  "description": "A free and unlimited API for Google Translate（contains single and multiple）",
+  "description": "A free and unlimited API for Google Translate （contains single and multiple）",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,18 +9,17 @@
   "keywords": [
     "google",
     "translate",
-    "multiple",
-    "language",
-    "react",
-    "react-native"
+	"googletranslate",
+	"google-translate"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Binhluan1234/react-google-translate-api"
-  },
-  "author": "LuanNguyen",
+  "repository": "github:William5553/translate-google-api",
+  "author": "William5553",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/William5553/triv/issues"
+  },
+  "homepage": "https://github.com/William5553/triv"
 }

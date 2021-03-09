@@ -1,4 +1,7 @@
 # translate-google-api
+
+Forked from [Binhluan1234/translate-google-api](https://github.com/Binhluan1234/translate-google-api)
+
 A free and unlimited API for Google Translate（support single text and Multi-segment text） 💵🚫
 # Feature
 
@@ -12,18 +15,8 @@ A free and unlimited API for Google Translate（support single text and Multi-se
 # Install
 
 ```shell
-npm install --save translate-google-api
+npm install --save @william5553/translate-google-api
 ```
-
-# Why this repo ？
-
-I have tried some libs for translate on React-Native app. But don't have any package support.
-
-I don't want to translate all the text first and I'd like to translate segment by segment. Especially in an article, the whole translation may not work well.
-
-In the existing library, if I want to translate multi-segment text, I have to request multiple times.(like [google-translate-api](https://github.com/matheuss/google-translate-api))
-
-So I have to use the new api to implement, so the `translate-google-api` is born.
 
 # Usage
 
@@ -107,14 +100,3 @@ proxy for request.
 Type: `object`
 
 config for [axios](https://github.com/axios/axios)
-
-# Related
-- [vitalets/google-translate-token](https://github.com/vitalets/google-translate-token)
-- [google-translate-api](https://github.com/matheuss/google-translate-api)
-- [translate-md-viewer](https://github.com/hua1995116/translate-md-viewer)
-
-# Inspiration
-
-# License
-
-Apache License
